@@ -1,3 +1,11 @@
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tamopstfstates"
+    storage_account_name = "ntmsstf"
+    container_name       = "tfstatedevops"
+    key                  = "tfstatedevops1.tfstate"
+  }
+}
 provider "azurerm" {
   features {}
 }
