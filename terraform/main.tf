@@ -92,7 +92,7 @@ output "account_id" {
   value = data.azurerm_client_config.current.client_id
 }
 resource "azurerm_key_vault" "example" {
-  name                        = "ntmskeyvault1"
+  name                        = "ntmskeyvault2"
   location                    = azurerm_resource_group.example.location
   resource_group_name         = azurerm_resource_group.example.name
   enabled_for_disk_encryption = true
