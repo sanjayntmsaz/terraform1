@@ -49,7 +49,7 @@ resource "azurerm_network_interface" "example" {
 }
 
 resource "azurerm_windows_virtual_machine" "example" {
-  name                = "example-machine"
+  name                = "ntmsvm1"
   resource_group_name = azurerm_resource_group.example.name
   location            = azurerm_resource_group.example.location
   size                = "Standard_F2"
