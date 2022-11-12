@@ -1,10 +1,23 @@
-variable "username" {
-  default     = "vmadmin"
+variable "resource_group_name" {
   type        = string
-  description = "Admin User Name"
+  description = "RG name in Azure"
 }
-variable "password" {
-  default     = "123#ntms123#"
+variable "resource_group_location" {
   type        = string
-  description = "Password"
+  description = "RG location in Azure"
+}
+variable "virtual_network_name" {
+  type        = string
+  description = "VNET name in Azure"
+}
+variable "subnet_name" {
+  type        = string
+  description = "Subnet name in Azure"
+}
+variable "network_interface_name" {
+  type        = string
+  description = "NIC name in Azure"
+}
+variable "client_secret" {
+  
 }
