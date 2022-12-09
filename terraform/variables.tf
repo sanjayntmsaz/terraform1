@@ -13,7 +13,7 @@ variable "rgname" {
   default = {
 	dev = "devtest-RG"
 	prod = "prod-RG"
-
+}
   description = "RG name"
 }
 
