@@ -9,11 +9,11 @@ variable "password" {
   description = "Password"
 }
 variable "rgname" {
-  type        = map
+  type = map(any)
   default = {
-	dev = "devtest-RG"
-	prod = "prod-RG"
-}
+    dev  = "devtest-RG"
+    prod = "prod-RG"
+  }
   description = "RG name"
 }
 
