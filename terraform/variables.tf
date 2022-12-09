@@ -1,7 +1,7 @@
 variable "username" {
   default     = "vmadmin"
   type        = string
-  description = "Admin User Name"
+  description = "local Admin User Name"
 }
 variable "password" {
   default     = "123#ntms123#"
