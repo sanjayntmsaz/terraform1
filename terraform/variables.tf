@@ -8,3 +8,12 @@ variable "password" {
   type        = string
   description = "Password"
 }
+variable "rgname" {
+  type        = map
+  default = {
+	dev = "devtest-RG"
+	prod = "prod-RG"
+
+  description = "RG name"
+}
+

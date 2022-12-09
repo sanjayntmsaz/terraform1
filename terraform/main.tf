@@ -18,7 +18,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "ntms-TF-RG2"
+  name     = var.rgname["dev"]
   location = "North Europe"
 }
 
